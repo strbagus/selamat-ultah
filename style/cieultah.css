@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: royalblue;
+}
+
+.letter {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 200px;
+  width: 300px;
+  height: 200px;
+  z-index: -10;
+  background: white;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.1);
+  transition: 1s;
+}
+.letter .arrow-down-closed {
+  width: 300px;
+  height: 125px;
+  position: absolute;
+  z-index: 5;
+  transition: 0.5s;
+}
+.letter .arrow-up-open {
+  width: 300px;
+  height: 125px;
+  position: absolute;
+  z-index: 9;
+  margin-top: -125px;
+  transition: 0.5s 0.5s;
+  visibility: hidden;
+}
+.letter .arrow-down {
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-top: 100px solid #f0f0f0;
+  border-left: 150px solid transparent;
+  position: absolute;
+  z-index: 1;
+}
+.letter .arrow-up {
+  width: 0;
+  height: 0;
+  border-right: 150px solid transparent;
+  border-bottom: 110px solid #fafafa;
+  border-left: 150px solid transparent;
+  position: absolute;
+  bottom: 0;
+  z-index: 4;
+}
+.letter .arrow-left {
+  width: 0;
+  height: 0;
+  border-right: 150px solid whitesmoke;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  position: absolute;
+  right: 0;
+  z-index: 3;
+}
+.letter .arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid whitesmoke;
+  position: absolute;
+  left: 0;
+  z-index: 3;
+}
+
+.message-box {
+  width: 250px;
+  height: 100px;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  position: absolute;
+  margin-top: -150px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  visibility: hidden;
+  text-align: center;
+  padding: 25px 20px;
+  animation: letter-out 4s ease 500ms forwards;
+  -webkit-animation-play-state: paused;
+}
+
+@keyframes letter-out {
+  0% {
+    z-index: 2;
+    visibility: hidden;
+  }
+  10% {
+    visibility: hidden;
+  }
+  66% {
+    z-index: 6;
+    visibility: visible;
+    margin-top: -400px;
+    height: 150px;
+    width: 250px;
+  }
+  100% {
+    z-index: 6;
+    visibility: visible;
+    margin-top: -250px;
+    height: 160px;
+  }
+}
+.message-box-greeting {
+  margin-top: 25px;
+}
+
+.gatau {
+  width: 300px;
+  height: 125px;
+  background: red;
+  border-radius: 0 0 500px 500px;
+}
+
+.wm {
+  font-size: 12px;
+  margin: 5px;
+  color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+/*# sourceMappingURL=cieultah.css.map */
+/*# sourceMappingURL=cieultah.scss.map */
+
+/*# sourceMappingURL=cieultah.css.map */

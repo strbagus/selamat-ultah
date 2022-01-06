@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta name="author" content="Satrio Bagus">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./asset/icon/favicon-birthday-cake.png" />
+    <link rel="stylesheet" type="text/css" href="./style/cieultah.css">
+    <title>Cie Ultah</title>
+</head>
+
+<body>
+    <!--GITHUB: Satrio-Bagus -->
+    <div class="letter" onclick="openLetter()">
+        <img src="./asset/letter-close4.svg" class="arrow-down-closed">
+        <div class="arrow-down"></div>
+        <img src="./asset/letter-open3.svg" class="arrow-up-open">
+        <div class="arrow-up"></div>
+        <div class="arrow-left"></div>
+        <div class="arrow-right"></div>
+    </div>
+
+    <div class="message-box">
+        <div class="message-box-greeting">
+            <p>Wah tambah tua ni, HBD yaa!! Semoga yang disemogakan tersemogakan!! Ditunggu traktirannya hehe </p>
+            <audio id="audio" src="./asset/music/selamatulangtahun-song.mp3"></audio>
+        </div>
+    </div>
+    <div class="wm">baguswptro</div>
+
+    <script type="text/javascript">
+        function openLetter() {
+            document.querySelector('.message-box').style.webkitAnimationPlayState = 'running';
+            document.querySelector('.arrow-down-closed').style.visibility = 'hidden';
+            document.querySelector('.arrow-up-open').style.visibility = 'visible';
+            document.getElementById('audio').play();
+        }
+    </script>
+</body>
+
+</html>
