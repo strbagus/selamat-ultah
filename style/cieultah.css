@@ -91,12 +91,7 @@ body {
 }
 
 .message-box-1 {
-  animation: letter1-out 4s ease 1s forwards;
-  -webkit-animation-play-state: paused;
-}
-
-.message-box-2 {
-  animation: letter2-out 4s ease 1s forwards;
+  animation: letter1-out 4s ease 750ms forwards;
   -webkit-animation-play-state: paused;
 }
 
@@ -105,6 +100,9 @@ body {
     visibility: hidden;
     margin-left: 50%;
     transform: translateX(-50%);
+  }
+  15%{
+    visibility: hidden;
   }
   44% {
     visibility: visible;
@@ -118,6 +116,11 @@ body {
     margin-left: 50%;
     transform: translateX(-50%);
   }
+}
+/*
+.message-box-2 {
+  animation: letter2-out 4s ease 1s forwards;
+  -webkit-animation-play-state: paused;
 }
 @keyframes letter2-out {
   0% {
@@ -137,6 +140,7 @@ body {
     height: 125px;
   }
 }
+*/
 .message-box-greeting {
   font-family: "Dancing Script", cursive;
   margin-top: 0;
