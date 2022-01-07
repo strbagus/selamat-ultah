@@ -1,10 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400&display=swap");
 * {
   margin: 0;
   padding: 0;
 }
 
 body {
-  background-color: royalblue;
+  background-image: linear-gradient(#0725b7, #6381f3);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .letter {
@@ -74,64 +78,78 @@ body {
   z-index: 3;
 }
 
-.message-box {
-  width: 250px;
-  height: 100px;
-  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.1);
+.message-box-1, .message-box-2 {
+  width: 225px;
+  height: 150px;
   background-color: white;
+  box-shadow: 0 0 25px 10px rgba(0, 0, 0, 0.08);
+  margin-top: -125px;
   position: absolute;
-  margin-top: -150px;
-  margin-left: 50%;
-  transform: translateX(-50%);
-  z-index: 2;
   visibility: hidden;
   text-align: center;
   padding: 25px 20px;
-  animation: letter-out 4s ease 500ms forwards;
+}
+
+.message-box-1 {
+  animation: letter1-out 4s ease 1s forwards;
   -webkit-animation-play-state: paused;
 }
 
-@keyframes letter-out {
+.message-box-2 {
+  animation: letter2-out 4s ease 1s forwards;
+  -webkit-animation-play-state: paused;
+}
+
+@keyframes letter1-out {
   0% {
-    z-index: 2;
     visibility: hidden;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
-  10% {
-    visibility: hidden;
-  }
-  66% {
-    z-index: 6;
+  44% {
     visibility: visible;
     margin-top: -400px;
-    height: 150px;
-    width: 250px;
+    widthR: 250px;
   }
   100% {
-    z-index: 6;
     visibility: visible;
-    margin-top: -250px;
-    height: 160px;
+    margin-top: -225px;
+    height: 150px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+}
+@keyframes letter2-out {
+  0% {
+    visibility: hidden;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  44% {
+    visibility: visible;
+    margin-top: -420px;
+  }
+  100% {
+    visibility: visible;
+    margin-left: 50.5%;
+    transform: translateX(-50.5%);
+    margin-top: -220px;
+    height: 125px;
   }
 }
 .message-box-greeting {
-  margin-top: 25px;
+  font-family: "Dancing Script", cursive;
+  margin-top: 0;
+  font-size: 20px;
 }
 
-.gatau {
-  width: 300px;
-  height: 125px;
-  background: red;
-  border-radius: 0 0 500px 500px;
-}
-
-.wm {
-  font-size: 12px;
-  margin: 5px;
-  color: rgba(255, 255, 255, 0.2);
-  font-weight: bold;
+.media-btn {
   position: absolute;
-  right: 0;
-  bottom: 0;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  bottom: 25px;
+  visibility: hidden;
+  color: white;
 }
 
 /*# sourceMappingURL=cieultah.css.map */
