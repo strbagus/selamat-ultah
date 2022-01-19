@@ -1,2 +1,2 @@
 # SelamatUlangTahun
-just a little gift from me to my friend.
+Very simple, when envelope onclick letter will come out of evelope and play music.
